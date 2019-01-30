@@ -4,6 +4,64 @@
 	<meta charset="utf-8">
 	<title>Job Application</title>
 </head>
+
+<style>
+
+div {
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+  margin-left: 15px;
+
+}
+
+input[type=text] {
+  padding: 10px 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+input[type=password] {
+  padding: 10px 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+input[type=submit] {
+  width: 10%;
+  background-color: #2D69F3;
+  color: white;
+  padding: 15px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+
+}
+
+select {
+  width: 10%;
+  padding: 10px 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+legend {
+  font-weight: bold;
+
+}
+
+textarea{
+
+	padding-top: 5px
+
+}
+
+
+</style>
+
+
 <body>
 
 <h2>Job Application</h2>
@@ -156,7 +214,7 @@
 		</div>
 	</fieldset>
 
-	<fieldset>
+	<fieldset id = text1>
 		<legend>Personal Statement</legend>
 		<div class="field">
 			<label>Why do you deserve this job?</label><br>
@@ -166,6 +224,16 @@
 			<label>Describe a recent project:</label><br>
 			<textarea name="project" rows="6" cols="60"></textarea>
 		</div>
+
+	</fieldset>
+
+	<fieldset id = text2>
+		<legend>Optional</legend>
+		<div class="field">
+			<label>If you have related job experience or extracurricular activities, please list them:</label><br>
+			<textarea name="activities" rows="6" cols="60"></textarea>
+		</div>
+
 	</fieldset>
 
 	<input type="submit" value="Submit form">
